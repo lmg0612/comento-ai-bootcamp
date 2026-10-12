@@ -1,0 +1,30 @@
+{
+  "mode": "few_shot",
+  "use_rag": true,
+  "cases": [
+    {
+      "name": "핵심목표",
+      "question": "핵심 목표를 세 줄로 요약해줘",
+      "expected_contains": [
+        "AI",
+        "학습"
+      ]
+    },
+    {
+      "name": "보안요건",
+      "question": "보안 요구사항 핵심이 뭔가요?",
+      "expected_contains": [
+        "접근",
+        "암호"
+      ]
+    },
+    {
+      "name": "모호질의",
+      "question": "그거 언제까지임?",
+      "expected_contains": [
+        "일정",
+        "기간"
+      ]
+    }
+  ]
+}
